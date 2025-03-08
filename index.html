@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conie Cakes</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Подключаем Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
@@ -14,70 +13,90 @@
 
 <body>
     <header>
-        <h1>
-            Conie Cakes
-        </h1>
+        <h1><span>Conie Cakes</span></h1>
         <nav>
             <ul class="ulnav">
-                <li><a href="#home">Главная</a></li>
-                <li><a href="#cakes">Торты</a></li>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#contact">Контакты</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cakes">Cakes</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="home">
-            <h2>Добро пожаловать в Conie Cakes!</h2>
-            <p>Здесь вы найдете самые вкусные и красивые торты на любой праздник.</p>
+            <h2>Welcome to Conie Cakes!</h2>
+            <p>Here you'll find the most delicious and beautiful cakes for any celebration.</p>
         </section>
 
         <section id="cakes">
-            <h2>Наши торты</h2>
+            <h2>Our Cakes</h2>
             <div class="cake-list">
                 <div class="cake-item">
-                    <img src="cake1.jpg" alt="Торт 1">
-                    <h3>Торт "Шоколадный"</h3>
-                    <p>Нежный шоколадный торт с кремом.</p>
-                    <button class="order-button" onclick="orderCake('Шоколадный')">Заказать</button>
+                    <img src="cake1.jpg" alt="Cake 1">
+                    <h3>Cake "Chocolate"</h3>
+                    <p>Delicate chocolate cake with cream.</p>
+                    <button class="order-button" onclick="orderCake('Chocolate')">Order</button>
                 </div>
+
                 <div class="cake-item">
-                    <img src="cake2.jpg" alt="Торт 2">
-                    <h3>Торт "Фруктовый"</h3>
-                    <p>Свежие фрукты и легкий творожный крем.</p>
-                    <button class="order-button" onclick="orderCake('Фруктовый')">Заказать</button>
+                    <img src="cake2.jpg" alt="Cake 2">
+                    <h3>Cake "Fruit"</h3>
+                    <p>Fresh fruits with light cottage cheese cream.</p>
+                    <button class="order-button" onclick="orderCake('Fruit')">Order</button>
                 </div>
+
                 <div class="cake-item">
-                    <img src="cake3.jpg" alt="Торт 3">
-                    <h3>Торт "Медовый"</h3>
-                    <p>Вкусный медовый торт с орехами.</p>
-                    <button class="order-button" onclick="orderCake('Медовый')">Заказать</button>
+                    <img src="cake3.jpg" alt="Cake 3">
+                    <h3>Cake "Honey"</h3>
+                    <p>Delicious honey cake with nuts.</p>
+                    <button class="order-button" onclick="orderCake('Honey')">Order</button>
+                </div>
+
+                <div class="cake-item">
+                    <img src="cake4.jpg" alt="Cake 4">
+                    <h3>Cake "Red Velvet"</h3>
+                    <p>Delicate red velvet cake with cream.</p>
+                    <button class="order-button" onclick="orderCake('Red Velvet')">Order</button>
+                </div>
+
+                <div class="cake-item">
+                    <img src="cake5.jpg" alt="Cake 5">
+                    <h3>Cake "Cheesecake"</h3>
+                    <p>Light cheesecake with berry sauce.</p>
+                    <button class="order-button" onclick="orderCake('Cheesecake')">Order</button>
+                </div>
+
+                <div class="cake-item">
+                    <img src="cake6.jpg" alt="Cake 6">
+                    <h3>Cake "Tiramisu"</h3>
+                    <p>Italian dessert with coffee and mascarpone.</p>
+                    <button class="order-button" onclick="orderCake('Tiramisu')">Order</button>
                 </div>
             </div>
         </section>
 
         <section id="about">
-            <h2>О нас</h2>
-            <p>Мы - команда профессиональных кондитеров, создающих сладкие шедевры.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Контакты</h2>
-            <p>Email: <a href="mailto:info@coniecakes.com">info@coniecakes.com</a></p>
-            <p>Телефон: +7 123 456 7890</p>
+            <h2>About Us</h2>
+            <p>We are a team of professional pastry chefs creating sweet masterpieces.</p>
         </section>
     </main>
 
     <footer>
-        <p class="footer1">&copy; 2023 Conie Cakes. Все права защищены.</p>
+        <p class="footer1">&copy; 2025 Conie Cakes. All rights reserved.</p>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:info@coniecakes.com">info@coniecakes.com</a></p>
+            <p>Phone: <a href="+7 123 456 7890">+7 123 456 7890 </a></p>
+        </section>
     </footer>
 
     <script src="script.js"></script>
     <script>
-        // Простая функция для кнопки "Заказать"
+        // Simple function for the "Order" button
         function orderCake(cakeName) {
-            alert("Вы заказали торт: " + cakeName);
+            alert("You ordered the cake: " + cakeName);
         }
     </script>
 </body>
